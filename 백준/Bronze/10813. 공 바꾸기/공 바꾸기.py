@@ -6,8 +6,6 @@ for i in range (N):
 
 for i in range (M):
     a, b = map(int, input().split())
-    temp = lst[a-1]
-    lst[a-1] = lst[b-1]
-    lst[b-1] = temp
+    lst[a-1],lst[b-1] = lst[b-1],lst[a-1]
 
 print(*lst)
