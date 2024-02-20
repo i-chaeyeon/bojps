@@ -1,25 +1,13 @@
 voca = list(input())
 tot = 0
+dial = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
+    
 
 for _ in voca:
-    if _ in "ABC":
-        time = 3
-    elif _ in "DEF":
-        time = 4
-    elif _ in "GHI":
-        time = 5
-    elif _ in "JKL":
-        time = 6
-    elif _ in "MNO":
-        time = 7
-    elif _ in "PQRS":
-        time = 8
-    elif _ in "TUV":
-        time = 9
-    elif _ in "WXYZ":
-        time = 10
-    else:
-        time = 11
-    tot += time
-    
+    for d in dial:
+        if _ in str(d):
+            num = dial.index(d) + 3
+            tot += num
+
+
 print(tot)
