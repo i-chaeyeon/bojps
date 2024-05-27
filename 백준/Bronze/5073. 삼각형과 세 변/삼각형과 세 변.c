@@ -13,22 +13,17 @@ int main(void){
             continue;
         }
 
-
-        int max;
         if(a>b && a>c){
-            max = a;
             if(a >= b+c){
                 printf("Invalid\n");
                 continue;
             }
         } else if (b>a && b>c){
-            max = b;
             if(b >= a+c){
                 printf("Invalid\n");
                 continue;
             }
         } else {
-            max = c;
             if(c >= a+b){
                 printf("Invalid\n");
                 continue;
@@ -40,9 +35,6 @@ int main(void){
         } else {
             printf("Scalene\n");
         }
-
-        
-
     }
     return 0;
 }
