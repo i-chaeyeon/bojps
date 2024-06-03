@@ -40,11 +40,11 @@ int main(void){
             result++;
             continue;
         }
-        if(arr[i].silver > curSilver && arr[i].gold < curGold){
+        if(arr[i].silver > curSilver && arr[i].gold == curGold){
             result++;
             continue;
         }   
-        if(arr[i].bronze > curBronze && arr[i].gold < curGold && arr[i].silver < curSilver ){
+        if(arr[i].bronze > curBronze && arr[i].gold == curGold && arr[i].silver == curSilver ){
             result++;
             continue;
         }
