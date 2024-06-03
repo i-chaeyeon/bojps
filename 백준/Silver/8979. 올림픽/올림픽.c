@@ -31,7 +31,7 @@ int main(void){
     int curBronze = arr[idx].bronze;
 
 
-    int result = 0;
+    int result = 1;
 
     for(int i=0; i<N; i++){
         if(arr[i].country == K)
