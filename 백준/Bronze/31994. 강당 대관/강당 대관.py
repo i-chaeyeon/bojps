@@ -1,4 +1,3 @@
-ans = ''
 curMax = 0
 
 for _ in range (7):
